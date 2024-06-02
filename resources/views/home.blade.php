@@ -35,9 +35,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex justify-content-between align-items-center">
@@ -50,7 +48,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="product.html">Product</a></li>
+          <li><a href="product.html">Product
+          </a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="mitra.html">Jadi Mitra Kami</a></li>
@@ -117,8 +116,8 @@
               <!-- <div class="wrap-icon icon-1">
                 <i class="bi bi-people"></i>
               </div> -->
-              <h3 class="mt-5" style="font-size: 23px; font-weight: thin;">Mudah dan Praktis</h3>
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p> -->
+              <h3 class="mt-5" style="font-size: 23px; font-weight: thin;">Terpusat</h3>
+              <p>Cari Kompetisi Sports / E-Sport dala satu aplikasi di ragaBattle</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
@@ -130,8 +129,8 @@
               <!-- <div class="wrap-icon icon-1">
                 <i class="bi bi-people"></i>
               </div> -->
-              <h3 class="mt-5" style="font-size: 23px; font-weight: thin;">Cek Detail Lapangan Tanpa ke Lokasi</h3>
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p> -->
+              <h3 class="mt-5" style="font-size: 23px; font-weight: thin;">Efisien</h3>
+              <p>Nonton pertandingan lebih mudah dengan ragaTicket</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
@@ -143,8 +142,8 @@
               <!-- <div class="wrap-icon icon-1">
                 <i class="bi bi-people"></i>
               </div> -->
-              <h3 class="mt-5" style="font-size: 23px; font-weight: thin;">Banyak Pilihan Lapangan</h3>
-              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p> -->
+              <h3 class="mt-5" style="font-size: 23px; font-weight: thin;">Kolaboratif</h3>
+              <p>Buat kompetisi dan kolalborasi dengn kami untuk mendapatkan sponsor !</p>
             </div>
           </div>
         </div>
@@ -155,7 +154,7 @@
   
     
     <!-- Pilihan Olahraga Section Start -->
-    <div class="row justify-content-center text-center mb-5">
+    <!-- <div class="row justify-content-center text-center mb-5">
       <div class="col-md-5" data-aos="fade-up">
         <h2  class="section-heading" style="
         margin-top: 85px;" >Pilihan Olahraga</h2>
@@ -182,7 +181,7 @@
             <img class="img_pilihan" src="assets/img/pilihanOlahraga/renang.png" alt="renang" width="80%">
         </div>
       </div>
-    <!-- Pilihan Olahraga Section End -->
+    Pilihan Olahraga Section End -->
     <!-- Produk Start -->
       <div class="row justify-content-center text-center mb-5" style="margin-top: 100px;">
         <div class="col-md-5" data-aos="fade-up">
@@ -349,13 +348,13 @@
                     <p class="review-user">
                       <img src="assets/img/person_3.jpg" alt="Image" class=" rounded-circle mb-3">
                       <span class="d-block">
-                        <span class="text-black">Dewi Rahayu</span>, &mdash; Pekerja Kantoran
+                        <span class="text-black">Dewi Rahayu</span>
                       </span>
                     </p>
                     <img src="assets/img/testi-1.png" class="mb-3" alt="" width="20%">
                     <!-- <h3>Mudah Digunakan</h3> -->
                     <blockquote>
-                      <p>"Aplikasi ini sangat mudah digunakan. Saya hanya perlu mengunduhnya, membuat akun, dan dalam hitungan menit, saya sudah bisa mencari dan memesan lapangan olahraga sesuai kebutuhan saya."</p>
+                      <p>"Aplikasi ini sangat mudah digunakan. Saya hanya perlu mengunduhnya, membuat akun, dan dalam hitungan menit, saya sudah bisa mencari kegiatan Olahraga dengan mudah."</p>
                     </blockquote>
                   </div>
                 </div><!-- End testimonial item -->
@@ -372,13 +371,13 @@
                     <p class="review-user">
                       <img src="assets/img/person_1.jpg" alt="Image" class=" rounded-circle mb-3">
                       <span class="d-block">
-                        <span class="text-black">Budi Santoso</span>, &mdash; Penggemar Olahraga
+                        <span class="text-black">Nabilul As'ad</span>
                       </span>
                     </p>
                     <img src="assets/img/testi-3.png" class="mb-3" alt="" width="20%">
                     <!-- <h3>Pilihan Lapangan Banyak</h3> -->
                     <blockquote>
-                      <p>"Aplikasi ini memiliki berbagai pilihan lapangan olahraga, mulai dari lapangan sepak bola, basket, tenis, hingga lapangan bulu tangkis. Saya selalu dapat menemukan lapangan yang cocok untuk aktivitas olahraga saya."</p>
+                      <p>"Aplikasi yang sangat membantu, cocok untuk kaum mageran yang ingin beraktivitas."</p>
                     </blockquote>
                   </div>
                 </div><!-- End testimonial item -->
@@ -395,11 +394,11 @@
                     <p class="review-user">
                       <img src="assets/img/person_2.jpg" alt="Image" class=" rounded-circle mb-3">
                       <span class="d-block">
-                        <span class="text-black">Andi Saputra</span>, &mdash; Pengguna Aplikasi
+                        <span class="text-black">Andi Saputra</span> 
                       </span>
                     </p>
                     <img src="assets/img/testi-2.png" class="mb-3" alt="" width="20%">
-                    <h3>Excellent App!</h3>
+                    <!-- <h3>Excellent App!</h3> -->
                     <blockquote>
                       <p>"Ketika saya memiliki pertanyaan atau masalah, layanan pelanggan dari aplikasi ini selalu responsif dan membantu saya menyelesaikan masalah tersebut dengan cepat."</p>
                     </blockquote>
