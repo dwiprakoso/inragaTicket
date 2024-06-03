@@ -41,4 +41,5 @@ class pemesananfikController extends Controller
         return redirect()->route('pemesananFik')->with('message', 'Data berhasil disimpan!');
 
     }
+    
 }
