@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PemesananController;
+use App\Http\Controllers\pemesananfikController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -38,7 +39,12 @@ Route::get('/mitra', function () {
 Route::get('/partnership', function () {
     return view('partnership');
 });
-Route::get('/pemesanan',[PemesananController::class,'crud']);
+Route::get('/pemesananSma',[PemesananController::class,'katsma'])->name('pemesananSma');
+Route::get('/pemesananFik',[pemesananfikController::class,'katfik'])->name('pemesananFik');
+
+
+Route::post('/pemesananSma/store', [PemesananController::class, 'store'])->name('pemesananSma.store');
+Route::post('/pemesananFik/store', [pemesananfikController::class, 'store'])->name('pemesananFik.store');
 Route::get('/syaratKetentuan', function () {
     return view('syaratKetentuan');
 });

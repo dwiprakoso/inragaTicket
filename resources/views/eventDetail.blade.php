@@ -4,15 +4,14 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <img src="assets/img/detailimg.png" class="img-fluid" alt="" />
+        <img src="assets/img/event/poster.jpeg" class="img-fluid" alt="...">
       </div>
       <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
         <div class="col-12">
           <h4>Deskripsi</h4>
           <hr style="border: 2px solid rgb(255, 0, 247)" />
           <p class="text-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deleniti repellendus inventore eum aspernatur eligendi assumenda nisi sed aliquid, aut doloribus commodi delectus in corporis hic tenetur rem cupiditate.
-            Harum.
+            <span class="fw-bold">FIX CUP</span> adalah sebuah kegiatan yang bertujuan untuk mewadahi minat dan bakat peserta didik, terutama siswa-siswi dari SMA/SMK sederajat di seluruh Kota Semarang serta mahasiswa dari Fakultas Ilmu Komputer. Kegiatan ini berfokus pada pertandingan olahraga futsal. Pada kesempatan kali ini, FIX CUP mengusung tema "One Team One Dream" yang menjadi landasan utama dalam penyelenggaraan event futsal. Event ini tidak hanya melibatkan pertandingan futsal antar SMA/SMK, tetapi juga mencakup pertandingan futsal antar program studi di Fakultas Ilmu Komputer. Selain itu, FIX CUP juga mengadakan lomba supporter tingkat SMA/SMK se-Kota Semarang, yang diharapkan dapat meningkatkan semangat sportivitas dan kebersamaan di antara peserta.
           </p>
         </div>
         <div class="card bg-body-secondary">
@@ -38,41 +37,45 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6 col-md-12 pt-4 mt-lg-0">
-        <div class="container">
-          <div class="row">
-            {{-- [poster] --}}
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 pt-4 mt-lg-0">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h4>Pilih Kategori</h4>
-              <div class="col-12 mb-4">
-                <a href="/pemesanan" class="text-decoration-none">
-                  <div class="card hover-shadow">
-                    <div class="card-body">
-                      <h4 class="card-title">SMA/SMK/MA</h4>
-                    </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <h4>Pilih Kategori</h4>
+            <div class="col-12 mb-4">
+              <a href="/pemesananSma" class="text-decoration-none">
+                <div class="card hover-shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">SMA/SMK/MA</h4>
                   </div>
-                </a>
-              </div>
-              <div class="col-12 mb-4">
-                <a href="/pemesanan" class="text-decoration-none">
-                  <div class="card hover-shadow">
-                    <div class="card-body">
-                      <h4 class="card-title">PRODI TI</h4>
-                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 mb-4">
+              <a href="/pemesananFik" class="text-decoration-none">
+                <div class="card hover-shadow">
+                  <div class="card-body">
+                    <h4 class="card-title">FIK UDINUS</h4>
                   </div>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
+        <div class="row mt-3">
+          <h3>CONTACT PERSON</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://wa.me/082328517256" target="_blank"><span class="fs-5">082328517256 PUTRI ROSSA</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://wa.me/085729641285" target="_blank"><span class="fs-5">085729641285 THEODORA</span></a>
+                        </div>
+                    </div>
+        </div>
       </div>
+      
+      
     </div>
   </div>
 </section>

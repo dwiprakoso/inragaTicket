@@ -122,7 +122,7 @@
               <div class="col-md-4">
                 <a href="/eventDetail">
                   <div class="card mx-auto" style="width: 24rem;">
-                      <img src="assets/img/detailimg.png" class="card-img-top" alt="...">
+                      <img src="assets/img/event/poster.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
                           <p><span class="created">Created By PT BEM FIK UDINUS</span><img src="assets/img/event/cardThumbnail/logo.png"></p>
 
