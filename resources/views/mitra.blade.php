@@ -51,15 +51,16 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a  href="product.html">Product</a></li>
+          <li><a class="active" href="/home">Home</a></li>
+          <li><a href="/product">Product
+          </a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a class="active" href="mitra.html">Jadi Mitra Kami</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/event">Event</a></li>
+          <li><a href="/mitra">Jadi Mitra Kami</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
@@ -108,54 +109,54 @@
     </section>
 
      <!-- ======= Footer ======= -->
-  <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <!-- <h3>Dapatkan Aplikasinya</h3> -->
-          <a href="https://play.google.com/store/apps/details?id=com.inraga.inraga" target="_blank"><img src="assets/img/google-play-badge.png" alt="" width="230px"></a>
-        </div>
-        <div class="col-md-8 ms-auto">
-          <div class="row site-section pt-0">
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Bantuan</h3>
-              <ul class="list-unstyled">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="syaratketentuan.html">Syarat dan Ketentuan</a></li>
-                <li><a href="kebijakanprivasi.html">Kebijakan Privasi</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Mitra</h3>
-              <ul class="list-unstyled">
-                <li><a href="mitra.html">Merchant</a></li>
-                <li><a href="partnership.html">Partnership</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>Ikuti Kami</h3>
-              <ul class="list-unstyled">
-                <li><a href="https://www.instagram.com/inraga.id/" target="_blank">Instagram</a></li>
-                <li><a href="#" target="_blank">Facebook</a></li>
-                <li><a href="#" target="_blank">Twitter</a></li>
-                <li><a href="#" target="_blank">Linkedin</a></li>
-              </ul>
-            </div>
+ <!-- ======= Footer ======= -->
+ <footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <!-- <h3>Dapatkan Aplikasinya</h3> -->
+        <a id="download"  href="https://play.google.com/store/apps/details?id=com.inraga.inraga" target="_blank"><img src="assets/img/google-play-badge.png" alt="" width="230px"></a>
+      </div>
+      <div class="col-md-8 ms-auto">
+        <div class="row site-section pt-0">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3>Bantuan</h3>
+            <ul class="list-unstyled">
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/syaratKetentuan">Syarat dan Ketentuan</a></li>
+              <li><a href="/kebijakanPrivasi">Kebijakan Privasi</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3>Mitra</h3>
+            <ul class="list-unstyled">
+              <li><a href="/mitra">Merchant</a></li>
+              <li><a href="/partnership">Partnership</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h3>Ikuti Kami</h3>
+            <ul class="list-unstyled">
+              <li><a href="https://www.instagram.com/inraga.id/" target="_blank">Instagram</a></li>
+              <li><a href="#" target="_blank">Facebook</a></li>
+              <li><a href="#" target="_blank">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/company/inraga/" target="_blank">Linkedin</a></li>
+            </ul>
           </div>
         </div>
       </div>
-
-      <div class="row justify-content-center text-center">
-        <div class="col-md-7">
-          <p class="copyright">&copy; Copyright InRaga 2023</p>
-
-        </div>
-      </div>
-
     </div>
-  </footer>
+
+    <div class="row justify-content-center text-center">
+      <div class="col-md-7">
+        <p class="copyright">&copy; Copyright InRaga 2024</p>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

@@ -51,11 +51,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a  href="product.html">Product</a></li>
+          <li><a class="active" href="/home">Home</a></li>
+          <li><a href="/product">Product
+          </a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a class="active" href="mitra.html">Jadi Mitra Kami</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/event">Event</a></li>
+          <li><a href="/mitra">Jadi Mitra Kami</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
