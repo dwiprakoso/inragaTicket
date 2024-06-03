@@ -120,15 +120,15 @@
         <div class="cardEvent">
             <div class="row">
               <div class="col-md-4">
-                <a href="">
+                <a href="/eventDetail">
                   <div class="card mx-auto" style="width: 24rem;">
-                      <img src="assets/img/event/cardThumbnail/thumbnail1.png" class="card-img-top" alt="...">
+                      <img src="assets/img/detailimg.png" class="card-img-top" alt="...">
                       <div class="card-body">
-                          <p><span class="created">Created By PT Angkat Beban Sejahtera</span><img src="assets/img/event/cardThumbnail/logo.png"></p>
+                          <p><span class="created">Created By PT BEM FIK UDINUS</span><img src="assets/img/event/cardThumbnail/logo.png"></p>
 
                           <!-- <p><span ></span></p>
                           <img src="" alt=""> -->
-                          <h5 class="card-title">Angkat Beban 2024</h5>
+                          <h5 class="card-title">FIX CUP</h5>
                           <p><span class="created">01 Juni 2024</span></p> 
                           <h5 class="card-title">Rp 200.000</h5>
                       </div>

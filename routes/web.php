@@ -1,11 +1,10 @@
 <?php
 
+use App\Http\Controllers\PemesananController;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home', function () {
     return view('home');
     // return view('/component/home');
 });
@@ -39,9 +38,7 @@ Route::get('/mitra', function () {
 Route::get('/partnership', function () {
     return view('partnership');
 });
-Route::get('/pemesanan', function () {
-    return view('pemesanan');
-});
+Route::get('/pemesanan',[PemesananController::class,'crud']);
 Route::get('/syaratKetentuan', function () {
     return view('syaratKetentuan');
 });
