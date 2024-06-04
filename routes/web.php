@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\adminController;
 use App\Http\Controllers\PemesananController;
 use App\Http\Controllers\pemesananfikController;
 use Illuminate\Support\Facades\Route;
@@ -45,6 +46,9 @@ Route::get('/pemesananFik',[pemesananfikController::class,'katfik'])->name('peme
 
 Route::post('/pemesananSma/store', [PemesananController::class, 'store'])->name('pemesananSma.store');
 Route::post('/pemesananFik/store', [pemesananfikController::class, 'store'])->name('pemesananFik.store');
+
+Route::get('/admin',[adminController::class,'index']);
+
 Route::get('/syaratKetentuan', function () {
     return view('syaratKetentuan');
     
