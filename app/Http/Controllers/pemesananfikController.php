@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AdminNotification;
 use App\Models\crudFik;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class pemesananfikController extends Controller
 {
@@ -19,7 +21,7 @@ class pemesananfikController extends Controller
             'nofik_kapten' => 'required',   
             'fik_official' => 'required',
             'nofik_official' => 'required',
-            'bukti_tffik' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'bukti_tffik' => 'required|image|mimes:png,jpg|max:2048',
         ]);
 
        
@@ -37,6 +39,17 @@ class pemesananfikController extends Controller
         $tablesma->bukti_tffik = $buktiTfPath;
 
         $tablesma->save();
+
+         // Data untuk email
+         $data = [
+            'nama_fik' => $request->input('nama_fik'),
+            'fik_kapten' => $request->input('fik_kapten'),
+            'fik_official' => $request->input('fik_official'),
+            // Tambahkan data lainnya jika diperlukan
+        ];
+
+        // Kirim email ke admin
+        Mail::to('inragaid@gmail.com')->send(new AdminNotification($data));
 
         return redirect()->route('pemesananFik')->with('message', 'Data berhasil disimpan!');
 

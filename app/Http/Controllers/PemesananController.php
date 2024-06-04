@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\AdminNotification;
+use App\Mail\SmaNotification;
 use App\Models\crudFik;
 use App\Models\crudSMA;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\View\View;
 
 class PemesananController extends Controller
@@ -18,7 +21,7 @@ class PemesananController extends Controller
     {
         $request->validate([
             'nama_sekolah' => 'required',
-            'logo_sekolah' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'logo_sekolah' => 'required|image|mimes:png,jpg|max:2048',
             'file_tim' => 'required|mimes:pdf|max:10240',
             'nama_kapten' => 'required',
             'no_kapten' => 'required',
@@ -26,7 +29,7 @@ class PemesananController extends Controller
             'no_official' => 'required',
             'nama_capo' => 'required',
             'no_capo' => 'required',
-            'bukti_tf' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'bukti_tf' => 'required|image|mimes:png,jpg|max:2048',
         ]);
 
         $logoSekolahPath = $request->file('logo_sekolah')->storeAs('public/images', $request->file('logo_sekolah')->getClientOriginalName());
@@ -45,6 +48,16 @@ class PemesananController extends Controller
         $tablesma->nama_capo = $request->input('nama_capo');
         $tablesma->no_capo = $request->input('no_capo');
         $tablesma->bukti_tf = $buktiTfPath;
+
+        // Data untuk email
+        $data = [
+            'nama_sekolah' => $request->input('nama_sekolah'),
+            'nama_kapten' => $request->input('nama_kapten'),
+            'nama_official' => $request->input('nama_official'),
+            // Tambahkan data lainnya jika diperlukan
+        ];
+
+        Mail::to('inragaid@gmail.com')->send(new SmaNotification($tablesma));
 
         $tablesma->save();
 

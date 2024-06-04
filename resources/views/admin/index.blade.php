@@ -139,6 +139,9 @@
             @csrf
             <button type="submit" class="btn btn-danger">Logout</button>
         </form>
+        <div class="col-12 py-3">
+            <button id="export-pdf-btn" class="btn btn-primary">Export to PDF</button>
+        </div>
         <div class="col-12">
             <a href="/eventDetail">
                 <button class="btn btn-primary">halaman event</button>
@@ -154,6 +157,24 @@
     <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script>
+        document.getElementById('export-pdf-btn').addEventListener('click', function() {
+            // Inisialisasi jsPDF
+            var doc = new jsPDF();
+    
+            // Tambahkan konten dari halaman web ke file PDF
+            doc.html(document.body, {
+                callback: function(pdf) {
+                    // Simpan file PDF
+                    pdf.save('document.pdf');
+                }
+            });
+        });
+    </script>
+    
+
 
 </body>
 </html>

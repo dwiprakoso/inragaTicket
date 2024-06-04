@@ -36,7 +36,7 @@
                     <input type="text" class="form-control" id="nama_sekolah" placeholder="SMA/SMK/MA" name="nama_sekolah" />
                   </div>
                   <div class="mb-3">
-                    <label for="logo_sekolah" class="form-label">Logo Sekolah</label>
+                    <label for="logo_sekolah" class="form-label">Logo Sekolah <span class="text-danger">*Png or Jpg only</span></label>
                     <input type="file" class="form-control" id="logo_sekolah" name="logo_sekolah" />
                   </div>
                   <div class="mb-3">
