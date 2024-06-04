@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class pemesananfikController extends Controller
 {
     public function katfik(){
+        
         return view('pemesananFik');
     }
     public function store(Request $request)
@@ -24,21 +25,26 @@ class pemesananfikController extends Controller
             'bukti_tffik' => 'required|image|mimes:png,jpg|max:2048',
         ]);
 
+        // $file_buktitf_fik = $request->file('bukti_tffik');
        
-        $fileTimPath = $request->file('file_fik')->storeAs('public/fileFik', $request->file('file_fik')->getClientOriginalName());
-        $buktiTfPath = $request->file('bukti_tffik')->storeAs('public/imageFik', $request->file('bukti_tffik')->getClientOriginalName());
+        $fileTimName = $request->file('file_fik')->getClientOriginalName();
+        $buktiTfName = $request->file('bukti_tffik')->getClientOriginalName();
 
-
+        $fileTimPath = $request->file('file_fik')->storeAs('public/uploads/fileFik', $fileTimName);
+        $buktiTfPath = $request->file('bukti_tffik')->storeAs('public/uploads/imageFik', $buktiTfName);
+        
         $tablesma = new crudFik();
         $tablesma->nama_fik = $request->input('nama_fik');
-        $tablesma->file_fik = $fileTimPath;
+        $tablesma->file_fik = $fileTimName;
         $tablesma->fik_kapten = $request->input('fik_kapten');
         $tablesma->nofik_kapten = $request->input('nofik_kapten');
         $tablesma->fik_official = $request->input('fik_official');
         $tablesma->nofik_official = $request->input('nofik_official');
-        $tablesma->bukti_tffik = $buktiTfPath;
+        $tablesma->bukti_tffik = $buktiTfName;
 
         $tablesma->save();
+
+
 
          // Data untuk email
          $data = [

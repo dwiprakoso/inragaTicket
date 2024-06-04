@@ -54,10 +54,11 @@
                         @endphp
                         @foreach ($datasma as $data)
                         @php
-                         $path = Storage::url('images/'.$data->logo_sekolah);
-                         $bukti = Storage::url('images/'.$data->bukti_tf);
-                         $fileTim = Storage::url('files/'.$data->file_tim);
-                       @endphp
+                            $bukti = Storage::url('uploads/imageSma/' . $data->bukti_tf);
+                            $fileTim = Storage::url('uploads/fileSma/' . $data->file_tim);
+                            $fileLogo = Storage::url('uploads/fileSma/' . $data->logo_sekolah);
+                            
+                            @endphp
                         <tr>
                             <td>{{ ++$i }}</td>
                             <td>{{ $data->nama_sekolah }}</td>
@@ -73,7 +74,7 @@
                             <td>{{ $data->nama_capo }}</td>
                             <td>{{ $data->no_capo }}</td>
                             <td>
-                                <img src="{{url($path)}}" alt="" class="imaged w64">
+                                <img src="{{url($fileLogo)}}" alt="" class="imaged w64">
                             </td>
                             <td>
                                 <img src="{{url($bukti)}}" alt="" class="imaged w64">
@@ -106,25 +107,27 @@
                             @endphp
                             @foreach ($datafik as $data)
                             @php
-                            $bukti = Storage::url('images/'.$data->bukti_tffik);
-                            $fileTim = Storage::url('files/'.$data->file_fik);
+                            $bukti = Storage::url('uploads/imageFik/' . $data->bukti_tffik);
+                            $fileTim = Storage::url('uploads/fileFik/' . $data->file_fik);
+                            
                             @endphp
                         <tr>
                             <td>No</td>
                             <td>{{ $data->nama_fik }}</td>
-                            
-                            <td>
-                                <a href="{{ url($fileTim) }}" target="_blank">Lihat PDF</a>
-                                <br>
+                            <td style="text-align: right;">
+                                <a href="{{url($fileTim)}}" target="_blank">Lihat PDF</a>
+                                
                                 <iframe src="{{ url($fileTim) }}" width="100%" height="200px"></iframe>
                             </td>
-                            
+                
                             <td>{{ $data->fik_kapten }}</td>
                             <td>{{ $data->nofik_kapten }}</td>
                             <td>{{ $data->fik_official }}</td>
                             <td>{{ $data->nofik_official }}</td>
                             <td>
-                                <img src="{{url($bukti)}}" alt="" class="imaged w64">
+                              
+                                 <img src="{{url($bukti)}}" alt="" class="imaged w64">
+                                   
                             </td>
                         </tr>
                         @endforeach

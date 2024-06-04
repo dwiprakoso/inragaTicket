@@ -32,22 +32,26 @@ class PemesananController extends Controller
             'bukti_tf' => 'required|image|mimes:png,jpg|max:2048',
         ]);
 
-        $logoSekolahPath = $request->file('logo_sekolah')->storeAs('public/images', $request->file('logo_sekolah')->getClientOriginalName());
-        $fileTimPath = $request->file('file_tim')->storeAs('public/files', $request->file('file_tim')->getClientOriginalName());
-        $buktiTfPath = $request->file('bukti_tf')->storeAs('public/images', $request->file('bukti_tf')->getClientOriginalName());
+        $fileTimName = $request->file('file_tim')->getClientOriginalName();
+        $buktiTfName = $request->file('bukti_tf')->getClientOriginalName();
+        $logoSekolahName = $request->file('logo_sekolah')->getClientOriginalName();
+
+        $fileTimPath = $request->file('file_tim')->storeAs('public/uploads/fileSma', $fileTimName);
+        $buktiTfPath = $request->file('bukti_tf')->storeAs('public/uploads/imageSma', $buktiTfName);
+        $logoSekolahPath = $request->file('bukti_tf')->storeAs('public/uploads/imageSma', $logoSekolahName);
 
 
         $tablesma = new crudSMA();
         $tablesma->nama_sekolah = $request->input('nama_sekolah');
-        $tablesma->logo_sekolah = $logoSekolahPath;
-        $tablesma->file_tim = $fileTimPath;
+        $tablesma->logo_sekolah = $logoSekolahName;
+        $tablesma->file_tim = $fileTimName;
         $tablesma->nama_kapten = $request->input('nama_kapten');
         $tablesma->no_kapten = $request->input('no_kapten');
         $tablesma->nama_official = $request->input('nama_official');
         $tablesma->no_official = $request->input('no_official');
         $tablesma->nama_capo = $request->input('nama_capo');
         $tablesma->no_capo = $request->input('no_capo');
-        $tablesma->bukti_tf = $buktiTfPath;
+        $tablesma->bukti_tf = $buktiTfName;
 
         // Data untuk email
         $data = [
