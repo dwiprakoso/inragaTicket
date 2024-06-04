@@ -135,6 +135,10 @@
     </div>
 
     <div class="container pb-5">
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" class="btn btn-danger">Logout</button>
+        </form>
         <div class="col-12">
             <a href="/eventDetail">
                 <button class="btn btn-primary">halaman event</button>
