@@ -14,12 +14,12 @@
             <span class="fw-bold">FIX CUP</span> adalah sebuah kegiatan yang bertujuan untuk mewadahi minat dan bakat peserta didik, terutama siswa-siswi dari SMA/SMK sederajat di seluruh Kota Semarang serta mahasiswa dari Fakultas Ilmu Komputer. Kegiatan ini berfokus pada pertandingan olahraga futsal. Pada kesempatan kali ini, FIX CUP mengusung tema "One Team One Dream" yang menjadi landasan utama dalam penyelenggaraan event futsal. Event ini tidak hanya melibatkan pertandingan futsal antar SMA/SMK, tetapi juga mencakup pertandingan futsal antar program studi di Fakultas Ilmu Komputer. Selain itu, FIX CUP juga mengadakan lomba supporter tingkat SMA/SMK se-Kota Semarang, yang diharapkan dapat meningkatkan semangat sportivitas dan kebersamaan di antara peserta.
           </p>
         </div>
-        <div class="card bg-body-secondary">
+        <div class="card" style="background-color: rgba(255, 0, 247, 0.39) ">
           <div class="card-body">
             <span class="fw-bold">FIX CUP 2024</span>
             <div class="col-12 mt-3">
               <img src="assets/img/ikonset/Calendar.svg" alt="" />
-              <span class="p-3">01 Juni 2024</span>
+              <span class="p-3">27 - 28 Juni 2024</span>
             </div>
             <div class="col-12 mt-3">
               <img src="assets/img/ikonset/Clock.svg" alt="" />
@@ -32,7 +32,7 @@
             <div class="container pt-3">
               <hr class="bg-secondary" />
               <div class="col-12">
-                <span class="text-secondary-emphasis">Beban Sejahtera</span>
+                <span class="text-secondary-emphasis">BEM FIK Udinus</span>
               </div>
             </div>
           </div>

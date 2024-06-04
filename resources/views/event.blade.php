@@ -52,7 +52,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="/home">Home</a></li>
+          <li><a  href="/">Home</a></li>
           <li><a href="/product">Product
           </a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
@@ -105,17 +105,20 @@
                 <div class="carousel-item active">
                     <img src="assets/img/event/event1.png" class="d-block w-55 " alt="...">
                 </div>
-                <div class="carousel-item">
+                {{-- <div class="carousel-item">
                     <img src="assets/img/event/event2.png" class="d-block w-55 " alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="assets/img/event/event3.png" class="d-block w-55 " alt="...">
+                </div> --}}
+                <div class="carousel-item">
+                    <img src="assets/img/event/event4.png" class="d-block w-55 " alt="...">
                 </div>
                 </div>
             </div>
         </div>
         <div class="filterSearch">
-            <p>Filter</p>
+            <p style="margin-top: 20px; color: #000; font-size:24px;">Upcoming Event</p>
         </div>
         <div class="cardEvent">
             <div class="row">
@@ -124,48 +127,41 @@
                   <div class="card mx-auto" style="width: 24rem;">
                       <img src="assets/img/event/poster.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
-                          <p><span class="created">Created By PT BEM FIK UDINUS</span><img src="assets/img/event/cardThumbnail/logo.png"></p>
-
-                          <!-- <p><span ></span></p>
-                          <img src="" alt=""> -->
-                          <h5 class="card-title">FIX CUP</h5>
-                          <p><span class="created">01 Juni 2024</span></p> 
+                          <p><span class="created" style="margin-right: 150px">Created By BEM FIK UDINUS</span><img src="assets/img/event/cardThumbnail/logoBemFIK.png"></p>
+                          <h5 class="card-title">FIX CUP 5.0</h5>
+                          <p><span class="created">27 - 28 Juni 2024</span></p> 
                           <h5 class="card-title">Rp 200.000</h5>
                       </div>
                   </div>
                 </a>
               </div>
+        </div>
+        <div class="filterSearch">
+            <p style="margin-top: 20px; color: #000; font-size:24px;">Completed Event</p>
+        </div>
+        <div class="cardEvent">
+            <div class="row">
               <div class="col-md-4">
-                <a href="">
-                  <div class="card mx-auto" style="width: 24rem;">
-                      <img src="assets/img/event/cardThumbnail/thumbnail1.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <p><span class="created">Created By PT Angkat Beban Sejahtera</span><img src="assets/img/event/cardThumbnail/logo.png"></p>
-
-                          <!-- <p><span ></span></p>
-                          <img src="" alt=""> -->
-                          <h5 class="card-title">Angkat Beban 2024</h5>
-                          <p><span class="created">01 Juni 2024</span></p> 
-                          <h5 class="card-title">Rp 200.000</h5>
-                      </div>
-                  </div>
-                </a>
+                <div class="card mx-auto" style="width: 24rem;">
+                    <img src="assets/img/event/posterMinton.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><span class="created" style="margin-right: 200px">Created By INRAGA</span><img src="assets/img/event/cardThumbnail/logoInraga.png"></p>
+                        <h5 class="card-title">Jug - Jug Minton</h5>
+                        <p><span class="created">16 - 17 September 2023</span></p> 
+                        <h5 class="card-title">Rp 10.000</h5>
+                    </div>
+                </div>
               </div>
               <div class="col-md-4">
-                <a href="">
-                  <div class="card mx-auto" style="width: 24rem;">
-                      <img src="assets/img/event/cardThumbnail/thumbnail1.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <p><span class="created">Created By PT Angkat Beban Sejahtera</span><img src="assets/img/event/cardThumbnail/logo.png"></p>
-
-                          <!-- <p><span ></span></p>
-                          <img src="" alt=""> -->
-                          <h5 class="card-title">Angkat Beban 2024</h5>
-                          <p><span class="created">01 Juni 2024</span></p> 
-                          <h5 class="card-title">Rp 200.000</h5>
-                      </div>
-                  </div>
-                </a>
+                <div class="card mx-auto" style="width: 24rem;">
+                    <img src="assets/img/event/posterMl.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><span class="created" style="margin-right: 190px">Created By FIK Udinus</span><img src="assets/img/event/cardThumbnail/logoUdinus.svg"></p>
+                        <h5 class="card-title">FIK E-Sport Championship</h5>
+                        <p><span class="created">2 - 3 Desember 2023</span></p> 
+                        <h5 class="card-title">Free</h5>
+                    </div>
+                </div>
               </div>
         </div>
       </div>

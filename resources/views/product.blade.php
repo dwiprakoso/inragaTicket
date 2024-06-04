@@ -28,19 +28,6 @@
 
 @extends('layout.master')
 
-<section class="section">
-  <div class="container">
-
-    <div class="row justify-content-center text-center">
-      <div class="col-md-7 mb-5">
-        <h2 class="section-heading">Coming Soon</h2>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illum obcaecati inventore velit laborum earum.</p> -->
-      </div>
-    </div>
-    <div class="row align-items-stretch"></div>
-  </div>
-</section>
-
 @section('content')
 <section class="section pb-0 mb-5">
   <div class="container">

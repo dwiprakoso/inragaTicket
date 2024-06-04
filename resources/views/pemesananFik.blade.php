@@ -5,7 +5,7 @@
 <section class="card-table">
   <div class="container">
     <div class="card">
-      <div class="card-header text-white text-center" style="background-color: #a377b6">- - - - - - - - - - - - - -</div>
+      <div class="card-header text-white text-center" style="background-color: #a377b6">FIX CUP 5.0 Created By BEM FIK Udinus</div>
       <div class="card-body bg-body-secondary">
         <h4 class="text-black py-3">Detail Pemesanan Kategori FIK</h4>
         @if (session('message'))
@@ -22,11 +22,12 @@
             </ul>
           </div>
         @endif
-        <div class="row">
-          <div class="col-lg-6 col-md-12 pt-4 mt-lg-0">
+        <div class="row" style="margin: 0 auto; /* Center horizontally */
+        float: none; /* Remove any float */">
+          <div class="col-lg-6">
             <div class="card">
               <div class="container">
-                <a target="_blank" class="text-center px-3" href="https://docs.google.com/document/d/1tjrpL4I8H2AIrQewRngJFw6BriGjoTjU/edit?usp=drivesdk&ouid=101569870764359329918&rtpof=true&sd=true">
+                <a target="_blank" class="text-center px-3" href="https://docs.google.com/document/d/1X8EVESucLvBed_s9fS_UuJd9KzF8bZk9/edit?usp=sharing&ouid=103007999727832807617&rtpof=true&sd=true">
                   <p class="text-danger text-center fw-bold text-uppercase fs-4 border border-danger">Pengisian PDF sesuai dengan Guide Book ini</p>
                 </a>
               </div>
@@ -57,16 +58,22 @@
                       <hr class="bg-body-secondary">
                     </div>
                     <div class="col-12 mt-3">
-                      <img src="assets/img/dana.jpg" style="width: 50px" alt="" />
                       <img src="assets/img/shopee.png" style="width: 50px" alt="" />
-                      <span class="p-3"><span class="fw-bold">0821-3726-6904</span> a/n enzo styan</span>
+                      <span class="p-3"><span class="fw-bold">0821-3726-6904</span> a/n zoee00</span>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <hr class="bg-body-secondary">
+                    </div>
+                    <div class="col-12 mt-3">
+                      <img src="assets/img/dana.jpg" style="width: 50px" alt="" />
+                      <span class="p-3"><span class="fw-bold">0821-3726-6904</span> a/n Enzo Styan Nazareno</span>
                     </div>
                     <div class="col-12 mt-3">
                       <hr class="bg-body-secondary">
                     </div>
                     <div class="col-12 mt-3">
                       <img src="assets/img/mandiri.jpg" style="width: 50px" alt="" />
-                      <span class="p-3"><span class="fw-bold">1350020211965</span> a/n enzo styan</span>
+                      <span class="p-3"><span class="fw-bold">1350020211965</span> a/n ENZO STYAN NAZARENO</span>
                     </div>
                     <div class="col-12 mt-3">
                       <hr class="bg-body-secondary">

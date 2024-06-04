@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\crudFik;
 use App\Models\crudSMA;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class PemesananController extends Controller
 {
@@ -56,45 +57,14 @@ class PemesananController extends Controller
 
     }
     public function update(Request $request, $id){
-        // // Validasi data yang dikirim dari form
-        // $request->validate([
-        //     'file_tim' => 'sometimes|mimes:pdf|max:10000', // Memastikan file tim adalah PDF dengan maksimal 10MB
-        //     'nama_sekolah' => 'required|string',
-        //     'nama_kapten' => 'required|string',
-        //     'no_kapten' => 'required|string',
-        //     'nama_official' => 'required|string',
-        //     'no_official' => 'required|string',
-        //     'nama_capo' => 'required|string',
-        //     'no_capo' => 'required|string',
-        //     'logo_sekolah' => 'sometimes|image', // Memastikan logo sekolah adalah gambar
-        //     'bukti_tf' => 'sometimes|image', // Memastikan bukti transfer adalah gambar
-        // ]);
-    
-        // // Ambil data yang akan diupdate
-        // $data = crudSMA::findOrFail($id);
-    
-        // // Update data kecuali file jika tidak diisi ulang
-        // $data->update($request->except(['file_tim', 'logo_sekolah', 'bukti_tf']));
-    
-        // // Jika file diisi ulang, update file yang baru
-        // if ($request->hasFile('file_tim')) {
-        //     $file_timPath = $request->file_tim->store('files', 'public');
-        //     $data->file_tim = $file_timPath;
-        // }
-    
-        // if ($request->hasFile('logo_sekolah')) {
-        //     $logo_sekolahPath = $request->logo_sekolah->store('images', 'public');
-        //     $data->logo_sekolah = $logo_sekolahPath;
-        // }
-    
-        // if ($request->hasFile('bukti_tf')) {
-        //     $bukti_tfPath = $request->bukti_tf->store('images', 'public');
-        //     $data->bukti_tf = $bukti_tfPath;
-        // }
-    
-        // $data->save();
-    
-        // return redirect()->route('route.name')->with('success', 'Data berhasil diupdate');
+    }
+    public function show() : View
+    {
+        //get all products
+        $tablesma = crudSMA::latest()->paginate(10);
+
+        //render view with products
+        return view('show', compact('tablesma'));
     }
 
 }
