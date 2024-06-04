@@ -7,7 +7,7 @@
     <div class="card">
       <div class="card-header text-white text-center" style="background-color: #a377b6">FIX CUP 5.0 Created By BEM FIK Udinus</div>
       <div class="card-body bg-body-secondary">
-        <h4 class="text-black py-3">Detail Pemesanan Kategori FIK</h4>
+        <h4 class="text-black py-3">Detail Pemesanan Kategori PRODI FIK UDINUS</h4>
         @if (session('message'))
         <div class="alert alert-success">
             {{ session('message') }}
@@ -28,7 +28,7 @@
             <div class="card">
               <div class="container">
                 <a target="_blank" class="text-center px-3" href="https://docs.google.com/document/d/1X8EVESucLvBed_s9fS_UuJd9KzF8bZk9/edit?usp=sharing&ouid=103007999727832807617&rtpof=true&sd=true">
-                  <p class="text-danger text-center fw-bold text-uppercase fs-4 border border-danger">Pengisian PDF sesuai dengan Guide Book ini</p>
+                  <p class="text-danger text-center fw-bold text-uppercase fs-4 border border-danger">Pengisian PDF sesuai dengan Format Pendaftaran ini</p>
                 </a>
               </div>
               <div class="card-body">
@@ -39,7 +39,7 @@
                       <input type="text" class="form-control" id="nama_fik" placeholder="Nama Tim" name="nama_fik" />
                   </div>  
                   <div class="mb-3">
-                      <label for="file_fik" class="form-label">Data Pemain dan Official <span class="text-danger">*Format Pdf sesuai guidebook</span></label>
+                      <label for="file_fik" class="form-label">Data Pemain dan Official <span class="text-danger">*Format Pdf sesuai format pendaftaran</span></label>
                       <input type="file" class="form-control" id="file_fik" name="file_fik" />
                   </div>
                   <div class="mb-3">
@@ -80,7 +80,7 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                      <label for="bukti_tffik" class="form-label">Input Bukti Transfer</label>
+                      <label for="bukti_tffik" class="form-label">Input Bukti Transfer <span class="text-danger">*file max 2 mb.</span></label>
                       <input type="file" class="form-control" id="bukti_tffik" name="bukti_tffik" />
                   </div>
                   <button type="submit" class="btn btn-primary" style="width: 100%">SUBMIT</button>

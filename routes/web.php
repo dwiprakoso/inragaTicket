@@ -47,6 +47,7 @@ Route::post('/pemesananSma/store', [PemesananController::class, 'store'])->name(
 Route::post('/pemesananFik/store', [pemesananfikController::class, 'store'])->name('pemesananFik.store');
 Route::get('/syaratKetentuan', function () {
     return view('syaratKetentuan');
+    
 Route::resource('/azisshow', [PemesananController::class,'show']);
 });
 

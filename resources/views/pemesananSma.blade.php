@@ -25,7 +25,7 @@
             <div class="card mx-auto" style="margin: 0 auto;  float: none;" >
               <div class="container">
                 <a target="_blank" class="text-center px-3" href="https://docs.google.com/document/d/1tjrpL4I8H2AIrQewRngJFw6BriGjoTjU/edit?usp=sharing&ouid=103007999727832807617&rtpof=true&sd=true">
-                  <p class="text-danger text-center fw-bold text-uppercase fs-4 border border-danger">Pengisian PDF sesuai dengan Guide Book ini</p>
+                  <p class="text-danger text-center fw-bold text-uppercase fs-4 border border-danger">Pengisian PDF sesuai dengan Format Pendaftaran ini</p>
                 </a>
               </div>
               <div class="card-body">
@@ -40,7 +40,7 @@
                     <input type="file" class="form-control" id="logo_sekolah" name="logo_sekolah" />
                   </div>
                   <div class="mb-3">
-                    <label for="file_tim" class="form-label">Data Pemain dan Official <span class="text-danger">*Format Pdf sesuai guidebook</span></label>
+                    <label for="file_tim" class="form-label">Data Pemain dan Official <span class="text-danger">*Format Pdf sesuai format pendaftaran</span></label>
                     <input type="file" class="form-control" id="file_tim" name="file_tim" />
                   </div>
                   <div class="mb-3">
