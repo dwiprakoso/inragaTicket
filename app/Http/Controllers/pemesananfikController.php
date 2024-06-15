@@ -46,16 +46,16 @@ class pemesananfikController extends Controller
 
 
 
-         // Data untuk email
-         $data = [
-            'nama_fik' => $request->input('nama_fik'),
-            'fik_kapten' => $request->input('fik_kapten'),
-            'fik_official' => $request->input('fik_official'),
-            // Tambahkan data lainnya jika diperlukan
-        ];
+        //  // Data untuk email
+        //  $data = [
+        //     'nama_fik' => $request->input('nama_fik'),
+        //     'fik_kapten' => $request->input('fik_kapten'),
+        //     'fik_official' => $request->input('fik_official'),
+        //     // Tambahkan data lainnya jika diperlukan
+        // ];
 
-        // Kirim email ke admin
-        Mail::to('inragaid@gmail.com')->send(new AdminNotification($data));
+        // // Kirim email ke admin
+        // Mail::to('inragaid@gmail.com')->send(new AdminNotification($data));
 
         return redirect()->route('pemesananFik')->with('message', 'Data berhasil disimpan!');
 

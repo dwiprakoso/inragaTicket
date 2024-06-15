@@ -48,11 +48,12 @@ Route::get('/pemesananFik',[pemesananfikController::class,'katfik'])->name('peme
 Route::post('/pemesananSma/store', [PemesananController::class, 'store'])->name('pemesananSma.store');
 Route::post('/pemesananFik/store', [pemesananfikController::class, 'store'])->name('pemesananFik.store');
 
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
-Route::post('/logout', [loginController::class, 'logout'])->name('logout');
+// Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+// Route::post('/login', [LoginController::class, 'login']);
+// Route::post('/logout', [loginController::class, 'logout'])->name('logout');
 
-Route::get('/azisshow', [adminController::class, 'index'])->middleware('checkLogin');
+// Route::get('/azisganteng', [adminController::class, 'index'])->middleware('checkLogin');
+Route::get('/azisganteng', [adminController::class, 'index']);
 
 Route::get('/syaratKetentuan', function () {
     return view('syaratKetentuan');

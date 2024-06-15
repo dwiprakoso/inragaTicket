@@ -54,14 +54,14 @@ class PemesananController extends Controller
         $tablesma->bukti_tf = $buktiTfName;
 
         // Data untuk email
-        $data = [
-            'nama_sekolah' => $request->input('nama_sekolah'),
-            'nama_kapten' => $request->input('nama_kapten'),
-            'nama_official' => $request->input('nama_official'),
-            // Tambahkan data lainnya jika diperlukan
-        ];
+        // $data = [
+        //     'nama_sekolah' => $request->input('nama_sekolah'),
+        //     'nama_kapten' => $request->input('nama_kapten'),
+        //     'nama_official' => $request->input('nama_official'),
+        //     // Tambahkan data lainnya jika diperlukan
+        // ];
 
-        Mail::to('inragaid@gmail.com')->send(new SmaNotification($tablesma));
+        // Mail::to('inragaid@gmail.com')->send(new SmaNotification($tablesma));
 
         $tablesma->save();
 

@@ -138,15 +138,15 @@
     </div>
 
     <div class="container pb-5">
-        <form method="POST" action="{{ route('logout') }}">
+        {{-- <form method="POST" action="{{ route('logout') }}">
             @csrf
             <button type="submit" class="btn btn-danger">Logout</button>
-        </form>
+        </form> --}}
         <div class="col-12 py-3">
             <button id="export-pdf-btn" class="btn btn-primary">Export to PDF</button>
         </div>
         <div class="col-12">
-            <a href="/eventDetail">
+            <a href="/eventDetail" target="_blank">
                 <button class="btn btn-primary">halaman event</button>
             </a>
         </div>
